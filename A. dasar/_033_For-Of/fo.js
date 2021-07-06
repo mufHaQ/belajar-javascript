@@ -11,5 +11,13 @@ console.log("===For Of===")
 // ================================================================================
 // Kode For Of:
 
+const names = ["Dliyaulhaq", "Mufliansyah"]
 
+for (const value of names) {
+    // console.log(`${value}`)
+    for (const char of value) {
+        console.log(char)
+    }
+    console.log('\n')
+}
 // ================================================================================

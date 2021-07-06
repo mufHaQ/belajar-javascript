@@ -18,9 +18,9 @@ console.info(fullName)
 
 // ================================================================================
 // Expression di String Template
-const name = "Dliyaulhaq Mufliansyah"
+const nama = "Dliyaulhaq Mufliansyah"
 const value = 80
-const lulus = `Nama: ${name}, Lulus: ${value > 70}`
+const lulus = `Nama: ${nama}, Lulus: ${value > 70}`
 console.log(lulus)
 // ================================================================================
 
