@@ -3,7 +3,7 @@ console.info('===Operator In===')
 
 // ================================================================================
 // Operator In:
-// * In adalah operator untuk mengecek apakah sebuah property ada di dalam object/array atau tidak
+// * In adalah operator untuk mengecek apakah sebuah property/index ada di dalam object/array atau tidak
 // * In operator menghasilkan boolean
 
 const person = {

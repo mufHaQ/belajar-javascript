@@ -69,18 +69,20 @@ console.log("===Function Generator===")
 // }
 
 // // Eager
-// function buatGanjilArray(value) { // Ditampilkan String dulu baru Number, karena harus memasukkan 1-1 ke dalam Array 'res'
+// function buatGanjilArray(value) { // Ditampilkan String dulu baru Number, karena harus memasukkan 1-1 Number ke dalam Array 'res', di return dan baru ditampilkan di dalam for loop
 //     let res = []
 //     for (let i = 1; i <= value; i++) {
 //         if (i % 2 !== 0) {
-//             console.log(`Yield ke-${i}`)
+//             console.log(`Yield ke-${i}`) // Akan langsung di-print jika function ini dipanggil
 //             res.push(i)
 //         }
 //     }
 //     return res
 // }
 
-// const angkaGanjil = buatGanjil(50)
+// const angkaGanjil = buatGanjilArray(50) // Akan menjalankan console.log(`Yield ke-${i}`)
+
+// const angkaGanjil = buatGanjil(50) // Akan menjalankan console.log(`Yield ke-${i}`) dan yield 
 
 // for (const ganjil of angkaGanjil) {
 //     console.log(ganjil)
