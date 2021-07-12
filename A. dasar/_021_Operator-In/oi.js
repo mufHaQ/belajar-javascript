@@ -25,6 +25,6 @@ console.info(result)
 
 // ================================================================================
 const arr = [null, "Ulhaq", undefined]
-const hasil = 2 in arr // true
+const hasil = 2 in arr // true, karena index 2 ada isinya walaupun undefined
 console.info(hasil)
 // ================================================================================

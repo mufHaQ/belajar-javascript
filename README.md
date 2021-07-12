@@ -1,1 +1,3 @@
 # Belajar Javascript
+
+- [x] **Selesai**

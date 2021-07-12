@@ -12,5 +12,20 @@ console.log("===Arrow Function di Object===")
 // ================================================================================
 // Kode Arrow Function di Object:
 
+const person = {
+    name: "Dliyaulhaq",
+    sayHello: name => {
+        console.log(`Hello ${name}`)
+    },
+    arrowThis: () => {
+        console.log(this)
+    },
+    anonThis: function() {
+        console.log(this)
+    }
+}
 
+person.sayHello(person.name)
+person.arrowThis() // Window
+person.anonThis() // Object person
 // ================================================================================
