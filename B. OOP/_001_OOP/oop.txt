@@ -1,0 +1,20 @@
+Apa itu Object Oriented Programming:
+    * Object Oriented Programming adalah sudut pandang bahasa pemrogramman yang berkonsep "objek"
+    * Ada banyak sudut pandang bahasa pemrogramman, namun OOP adalah yang populer saat ini
+    * Ada beberapa istilah yang perlu dimengerti dalam OOP, yaitu Object dan Class
+
+
+Apa itu Object:
+    * Object adalah data yang berisi field/properties/attributes/method/function/behavior
+
+
+Apa itu Class:
+    * Class adalah blueprint, prototype atau cetakan untuk membuat Object
+    * Class berisikan deklarasi semua properties dan functions yang dimiliki oleh Object
+    * Setiap Object selalu dibuat dari Class
+    * Dan sebuah Class bisa membuat Object tanpa batas
+
+
+OOP di JavaScript:
+    * JavaScript sendiri sebenarnya sejak awal dibuat sebagai bahasa prosedural, bukan OOP
+    * Oleh karena itu, implementasi OOP di JavaScript tidak sedetail dan selengkap bahasa pemrogramman lain yang memang dari awal adalah bahasa OOP, seperti Java
