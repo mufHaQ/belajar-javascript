@@ -1,3 +1,3 @@
 # Belajar Javascript
 
-- [x] **Selesai**
+- [ ] **Selesai**
