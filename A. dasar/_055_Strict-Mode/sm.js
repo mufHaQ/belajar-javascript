@@ -25,7 +25,7 @@ function withStrictMode() { // Akan error
         firstName: "Dliyaulhaq"
     }
 
-    with (person) {
+    with (person) { // Akan error karena menggunakan strict mode
         console.log(firstName)
     }
 }

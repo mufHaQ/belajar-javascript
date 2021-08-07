@@ -26,6 +26,8 @@ const person = {
 }
 
 person.sayHello(person.name)
-person.arrowThis() // Window
+console.log("Common Function:")
 person.anonThis() // Object person
+console.log("Arrow Function:")
+person.arrowThis() // Window
 // ================================================================================

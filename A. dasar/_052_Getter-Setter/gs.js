@@ -21,7 +21,7 @@ const person = {
     // Setter
     set fullName(name) {
         const n = name.split(" ")
-        this.firstName = n[0]       
+        this.firstName = n[0]
         this.lastName = n[1] ?? ""
     }
 }

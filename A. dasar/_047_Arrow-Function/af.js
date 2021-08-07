@@ -41,7 +41,7 @@ console.log("===Arrow Function===")
 
 
 // ================================================================================
-// Kode Arrot Function Tanpa Block, Return Value:
+// Kode Arrow Function Tanpa Block, Return Value:
 
 // const sum = (a, b) => a + b
 // console.log(sum(100, 100))
