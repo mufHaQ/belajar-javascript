@@ -19,5 +19,12 @@ console.log("===Static Class Field===")
 
 
 // Kode: Static Class Field
+class Configuration {
+    static name = "Belajar Javascript"
+    static version = 1.0
+    static author = "Dliyaulhaq Mufliansyah"
+}
 
+console.log(Configuration)
+console.log(Configuration.author)
 // ================================================================================
