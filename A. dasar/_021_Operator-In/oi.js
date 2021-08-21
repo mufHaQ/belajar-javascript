@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 console.info('===Operator In===')
 
 
@@ -11,7 +13,7 @@ const person = {
     alamat: "Indonesia"
 }
 
-const result = "alamat" in person
+const result = "alamat" in person // true
 console.info(result)
 // ================================================================================
 
