@@ -14,7 +14,7 @@ console.log("===Boolean===")
 // Kode: Boolean
 {
     // const bool = new Boolean(true) // object
-    const bool = Boolean(true)
+    const bool = Boolean(true) // boolean
 
     console.log(bool) // true
     console.log(typeof bool) // boolean, jika kita membuat instance object, maka tipe datanya akan menjadi object

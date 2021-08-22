@@ -14,11 +14,11 @@ console.log("===Map===")
 // Perbedaan Map & Object
 // |--------------------Map-----------------------------|---------------------------Object--------------------------|
 // | Pertama dibuat, tidak memiliki key                 | Karena memiliki prototype, jadi bisa memiliki default key |
-// |                                                    | ketika pertama dibuat                                     |
-// | Key bisa tipe data apapun                          | Key hanya bisa string atau symbol                         |
-// | Jumlah key bisa diketahui dengan mudah             | Tidak bisa diketahui, harus manual menggunakan iterasi    |
+// |                                                    | ketika pertama dibuat.                                    |
+// | Key bisa tipe data apapun                          | Key hanya bisa string atau symbol.                        |
+// | Jumlah key bisa diketahui dengan mudah             | Tidak bisa diketahui, harus manual menggunakan iterasi.   |
 // | dengan attrubute size                              |                                                           |
-// | Secara default tidak bisa dikonversikan ke JSON    | Bisa dikonversi ke JSON secara otomatis                   |
+// | Secara default tidak bisa dikonversikan ke JSON    | Bisa dikonversi ke JSON secara otomatis.                  |
 // |----------------------------------------------------|-----------------------------------------------------------|
 
 
