@@ -1,4 +1,4 @@
-console.info("===If Expression===")
+console.info("===If Expression===");
 
 // ================================================================================
 // If Expression:
@@ -14,17 +14,16 @@ console.info("===If Expression===")
 // * Jika kedua-beberapa If terpenuhi, maka yang akan dijalankan adalah If yang pertama
 // ================================================================================
 
-
 // ================================================================================
-const examValue = 80
+const examValue = 80;
 
 if (examValue >= 90) {
-    console.info("Good Job: A")
+  console.info("Good Job: A");
 } else if (examValue >= 80) {
-    console.info("Good Job: B")
+  console.info("Good Job: B");
 } else if (examValue >= 70) {
-    console.info("Good Job: C")
+  console.info("Good Job: C");
 } else {
-    console.info("Try Again Next Year!")
+  console.info("Try Again Next Year!");
 }
 // ================================================================================

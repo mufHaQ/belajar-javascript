@@ -1,5 +1,4 @@
-console.log("===Getter dan Setter===")
-
+console.log("===Getter dan Setter===");
 
 // ================================================================================
 // Getter dan Setter:
@@ -7,27 +6,26 @@ console.log("===Getter dan Setter===")
 // * Dengan menggunakan Getter dan Setter, kita bisa melakukan hal apapun di dalam function sebelum sebuah property diakses atau diubah, misal menambahkan validasi dll.
 // ================================================================================
 
-
 // ================================================================================
 // Kode Getter dan Setter:
 
 const person = {
-    firstName: "Dliyaulhaq",
-    lastName: "Mufliansyah",
-    // Getter
-    get fullName() {
-        return `${this.firstName} ${this.lastName}`
-    },
-    // Setter
-    set fullName(name) {
-        const n = name.split(" ")
-        this.firstName = n[0]
-        this.lastName = n[1] ?? ""
-    }
-}
-console.table(person)
-person.fullName = "Budi Kurniawan"
-console.table(person)
-person.fullName = "Sandi"
-console.table(person)
+  firstName: "Dliyaulhaq",
+  lastName: "Mufliansyah",
+  // Getter
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  // Setter
+  set fullName(name) {
+    const n = name.split(" ");
+    this.firstName = n[0];
+    this.lastName = n[1] ?? "";
+  },
+};
+console.table(person);
+person.fullName = "Budi Kurniawan";
+console.table(person);
+person.fullName = "Sandi";
+console.table(person);
 // ================================================================================

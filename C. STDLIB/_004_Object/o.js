@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Object===")
-
+console.log("===Object===");
 
 // ================================================================================
 // Object:
@@ -9,9 +8,7 @@ console.log("===Object===")
 // * https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/object
 // ================================================================================
 
-
-console.log("========================================")
-
+console.log("========================================");
 
 // ================================================================================
 // Object Freeze & Seal:
@@ -21,40 +18,37 @@ console.log("========================================")
 // * Object.seal() digunakan untuk mengubah object menjadi object yang tidak bisa dihapus attributenya
 // * Dan di seal/freeze kita tidak bisa menambahkan lagi attribute ke dalam object
 
-
 // Kode: Object Freeze & Seal
 // Freeze
 {
-    console.log("Freeze:")
-    const person = {
-        first_name: "Dliyaulhaq",
-        last_name: "Mufliansyah"
-    }
+  console.log("Freeze:");
+  const person = {
+    first_name: "Dliyaulhaq",
+    last_name: "Mufliansyah",
+  };
 
-    Object.freeze(person)
-    person.first_name = "Test" // Tidak diubah
-    delete person.last_name // Tidak dihapus
-    console.table(person)
+  Object.freeze(person);
+  person.first_name = "Test"; // Tidak diubah
+  delete person.last_name; // Tidak dihapus
+  console.table(person);
 }
 
 // Seal
 {
-    console.log("\nSeal:")
-    const person = {
-        first_name: "Dliyaulhaq",
-        last_name: "Mufliansyah"
-    }
+  console.log("\nSeal:");
+  const person = {
+    first_name: "Dliyaulhaq",
+    last_name: "Mufliansyah",
+  };
 
-    Object.seal(person)
-    person.first_name = "Test" // Diubah
-    delete person.last_name // Tidak dihapus
-    console.table(person)
+  Object.seal(person);
+  person.first_name = "Test"; // Diubah
+  delete person.last_name; // Tidak dihapus
+  console.table(person);
 }
 // ================================================================================
 
-
-console.log("========================================")
-
+console.log("========================================");
 
 // ================================================================================
 // Object Assign:
@@ -62,23 +56,20 @@ console.log("========================================")
 // * Hal ini bisa kita lakukan dengan menggunakan Object.assign(target, source)
 // * Jika di dalam source memiliki attribute yang sama dengan target, maka attribute target akan ditimpa
 
-
 // Kode: Object Assign
 {
-    console.log("Object Assign:")
-    const target = { first_name: "Dliyaulhaq" }
-    const source = { last_name: "Mufliansyah" }
+  console.log("Object Assign:");
+  const target = { first_name: "Dliyaulhaq" };
+  const source = { last_name: "Mufliansyah" };
 
-    Object.assign(target, source)
+  Object.assign(target, source);
 
-    console.table(target) // Assign first_name & last_name
-    console.table(source)
+  console.table(target); // Assign first_name & last_name
+  console.table(source);
 }
 // ================================================================================
 
-
-console.log("========================================")
-
+console.log("========================================");
 
 // ================================================================================
 // Object Property Name & Value:
@@ -87,23 +78,20 @@ console.log("========================================")
 // * Object.getOwnPropertyNames() digunakan untuk mengambil semua property name
 // * Kedua method tersebut akan mereturn data berbentuk array
 
-
 // Kode: Object Property Name & Value
 {
-    console.log("Object Property Name & Value:")
-    const person = Object.freeze({
-        first_name: "Dliyaulhaq",
-        last_name: "Mufliansyah"
-    })
+  console.log("Object Property Name & Value:");
+  const person = Object.freeze({
+    first_name: "Dliyaulhaq",
+    last_name: "Mufliansyah",
+  });
 
-    console.table(Object.values(person))
-    console.table(Object.getOwnPropertyNames(person))
+  console.table(Object.values(person));
+  console.table(Object.getOwnPropertyNames(person));
 }
 // ================================================================================
 
-
-console.log("========================================")
-
+console.log("========================================");
 
 // ================================================================================
 // Dll:

@@ -1,5 +1,4 @@
-console.log("===For In===")
-
+console.log("===For In===");
 
 // ================================================================================
 // For In:
@@ -7,7 +6,6 @@ console.log("===For In===")
 // * Walaupun For In bisa digunakan untuk Array, namun tidak direkomendasikan untuk Array, karena biasanya kita jarang sekali butuh data index untuk Array
 // * Di Object akan mereturn nama propertynya, di Array akan mereturn nomor indexnya
 // ================================================================================
-
 
 // ================================================================================
 // Kode For In:
@@ -22,13 +20,12 @@ console.log("===For In===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Contoh pada Array:
 
-const nama = ["Dliyaulhaq", "Mufliansyah"]
+const nama = ["Dliyaulhaq", "Mufliansyah"];
 
 for (const index in nama) {
-    console.info(`Index ke-${index}: ${nama[index]}`)
+  console.info(`Index ke-${index}: ${nama[index]}`);
 }
 // ================================================================================

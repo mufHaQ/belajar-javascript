@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Array===")
-
+console.log("===Array===");
 
 // ================================================================================
 // Array:
@@ -11,22 +10,19 @@ console.log("===Array===")
 // * https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/Array
 // ================================================================================
 
-
 // ================================================================================
 // Array Loop:
 // * Sebelumnya kita bisa menggunakan for..in dan for..of untuk melakukan iterasi Array, namun array juga memiliki method yang bernama forEach()
 // * Method forEach() bisa digunakan juga untuk melakukan iterasi data Array
 
-
 // Kode: Array Loop
 {
-    console.log("Array Loop:")
-    const arr = ["Dliyaulhaq", "Mufliansyah"]
-    arr.forEach((value, index) => console.log(`Index ke-${index}: ${value}`))
-    // arr.forEach(value => console.log(value)) // Tanpa index
+  console.log("Array Loop:");
+  const arr = ["Dliyaulhaq", "Mufliansyah"];
+  arr.forEach((value, index) => console.log(`Index ke-${index}: ${value}`));
+  // arr.forEach(value => console.log(value)) // Tanpa index
 }
 // ================================================================================
-
 
 // ================================================================================
 // Array Queue:
@@ -36,23 +32,21 @@ console.log("===Array===")
 // * Mirip sekali dengan antrian, atau istilahnya FIFO (First In First Out)
 // * Kita bisa menggunakan Array dengan bantuan function push() untuk menambah data dari depan-belakang, dan shift() untuk mengambil dan menghapus data paling depan
 
-
 // Kode: Array Queue
 {
-    console.log("\nArray Queue:")
+  console.log("\nArray Queue:");
 
-    const queue = []
+  const queue = [];
 
-    // Masukkan data secara berurutan depan-belakang
-    queue.push("Dliyaulhaq")
-    queue.push("Mufliansyah")
+  // Masukkan data secara berurutan depan-belakang
+  queue.push("Dliyaulhaq");
+  queue.push("Mufliansyah");
 
-    for (let index = 1; index <= queue.length + 1; index++) {
-        console.log(`shift ke-${index}:`, queue.shift()) // Akan mereturn dan menghapus nilai index pertama dari Array
-    }
+  for (let index = 1; index <= queue.length + 1; index++) {
+    console.log(`shift ke-${index}:`, queue.shift()); // Akan mereturn dan menghapus nilai index pertama dari Array
+  }
 }
 // ================================================================================
-
 
 // ================================================================================
 // Array Stack:
@@ -62,22 +56,20 @@ console.log("===Array===")
 // * Sedangkan saat kita mengambil data, kita akan mengambil data dari yang paling belakang (atau atas) terlebih dahulu
 // * Dan kita bisa menggunakan pop() untuk menghapus index paling belakang
 
-
 // Kode: Array Stack
 {
-    console.log("\nArray Stack:")
+  console.log("\nArray Stack:");
 
-    const stack = []
+  const stack = [];
 
-    stack.push("Dliyaulhaq")
-    stack.push("Mufliansyah")
+  stack.push("Dliyaulhaq");
+  stack.push("Mufliansyah");
 
-    for (let index = 1; index <= stack.length + 1; index++) {
-        console.log(`pop ke-${index}:`, stack.pop()) // Akan mereturn dan menghapus nilai index terakhir dari Array
-    }
+  for (let index = 1; index <= stack.length + 1; index++) {
+    console.log(`pop ke-${index}:`, stack.pop()); // Akan mereturn dan menghapus nilai index terakhir dari Array
+  }
 }
 // ================================================================================
-
 
 // ================================================================================
 // Array Search:
@@ -92,21 +84,19 @@ console.log("===Array===")
 // | lastIndexOf(value): index                   | Mengecek posisi index data terakhir           |
 // |---------------------------------------------|-----------------------------------------------|
 
-
 // Kode: Array Search:
 {
-    console.log("\nArray Search")
+  console.log("\nArray Search");
 
-    const source = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+  const source = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
 
-    console.log(source.find(value => value > 3)) // 4
-    console.log(source.findIndex(value => value > 3)) // index-3
-    console.log(source.includes(6)) // false
-    console.log(source.indexOf(5)) // 4
-    console.log(source.lastIndexOf(5)) // 9
+  console.log(source.find((value) => value > 3)); // 4
+  console.log(source.findIndex((value) => value > 3)); // index-3
+  console.log(source.includes(6)); // false
+  console.log(source.indexOf(5)); // 4
+  console.log(source.lastIndexOf(5)); // 9
 }
 // ================================================================================
-
 
 // ================================================================================
 // Array Filter:
@@ -115,17 +105,15 @@ console.log("===Array===")
 // | fiter(value => boolean): Array | Melakukan filter data yang kondisinya bernilai true |
 // |--------------------------------|-----------------------------------------------------|
 
-
 // Kode: Array Filter:
 {
-    console.log("\n Array Filter:")
-    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  console.log("\n Array Filter:");
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    console.log(numbers.filter(value => value % 2 == 0)) // [ 2, 4, 6, 8, 10 ]
-    console.log(numbers.filter(value => value % 2 == 1)) // [ 1, 3, 5, 7, 9 ]
+  console.log(numbers.filter((value) => value % 2 == 0)); // [ 2, 4, 6, 8, 10 ]
+  console.log(numbers.filter((value) => value % 2 == 1)); // [ 1, 3, 5, 7, 9 ]
 }
 // ================================================================================
-
 
 // ================================================================================
 // Array Transform:
@@ -137,18 +125,16 @@ console.log("===Array===")
 // | reduceRight((accumulator, value) => result)        | Sama seperti reduce(), namun dilakukan dari belakang          |
 // |----------------------------------------------------|---------------------------------------------------------------|
 
-
 // Kode: Array Transform
 {
-    console.log("\nArray Transform:")
+  console.log("\nArray Transform:");
 
-    let alph = ["ab", "cd", "ef", "gh", "ij", "kl", "mn", "op", "qr", "st", "uv", "wx", "yz"]
-    alph = alph.map(val => val.toUpperCase())
-    console.log(alph.reduce((acc, curr) => acc + " " + curr))
-    console.log(alph.reduceRight((acc, curr) => acc + " " + curr))
+  let alph = ["ab", "cd", "ef", "gh", "ij", "kl", "mn", "op", "qr", "st", "uv", "wx", "yz"];
+  alph = alph.map((val) => val.toUpperCase());
+  console.log(alph.reduce((acc, curr) => acc + " " + curr));
+  console.log(alph.reduceRight((acc, curr) => acc + " " + curr));
 }
 // ================================================================================
-
 
 // ================================================================================
 // Dan Function lainya:

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Map===")
-
+console.log("===Map===");
 
 // ================================================================================
 // Map:
@@ -9,7 +8,6 @@ console.log("===Map===")
 // * Map mirip dengan object, hanya saja, pada map semua method untuk manipulasi data sudah disediakan
 // * Map mengikuti kontrak iterable, sehingga secara default bisa di iterasi
 // * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-
 
 // Perbedaan Map & Object
 // |--------------------Map-----------------------------|---------------------------Object--------------------------|
@@ -20,7 +18,6 @@ console.log("===Map===")
 // | dengan attrubute size                              |                                                           |
 // | Secara default tidak bisa dikonversikan ke JSON    | Bisa dikonversi ke JSON secara otomatis.                  |
 // |----------------------------------------------------|-----------------------------------------------------------|
-
 
 // Map Instance Method & Property:
 // |-----Method & Property------|--------------------Ketarangan---------------------|
@@ -33,27 +30,26 @@ console.log("===Map===")
 // | forEach((value, key) => )  | Melakukan iterasi Map                             |
 // |----------------------------|---------------------------------------------------|
 
-
 // Kode: Map
 {
-    const map = new Map()
+  const map = new Map();
 
-    map.set("Name", "Dliyaulhaq Mufliansyah")
-    map.set("Address", "Indonesia")
+  map.set("Name", "Dliyaulhaq Mufliansyah");
+  map.set("Address", "Indonesia");
 
-    console.table(map)
-    console.log(map.get("Name")) // Dliyaulhaq Mufliansyah
-    console.log(map.size) // 2
-    console.log(typeof map) // object
+  console.table(map);
+  console.log(map.get("Name")); // Dliyaulhaq Mufliansyah
+  console.log(map.size); // 2
+  console.log(typeof map); // object
 
-    console.log("\nIterasi:")
-    // for (const elemenet of map) {
-    //     console.log(`${elemenet[0]}: ${elemenet[1]}`)
-    // }
-    map.forEach((val, key) => console.log(`${key}: ${val}`))
+  console.log("\nIterasi:");
+  // for (const elemenet of map) {
+  //     console.log(`${elemenet[0]}: ${elemenet[1]}`)
+  // }
+  map.forEach((val, key) => console.log(`${key}: ${val}`));
 
-    console.log()
-    map.delete("Address")
-    console.table(map)
+  console.log();
+  map.delete("Address");
+  console.table(map);
 }
 // ================================================================================

@@ -1,5 +1,4 @@
-console.log('===Scope===')
-
+console.log("===Scope===");
 
 // ================================================================================
 // Scope:
@@ -9,10 +8,8 @@ console.log('===Scope===')
 // * Data di global scope bisa diakses di local scope, namun data di local scope hanya bisa diakses di local scope tersebut atau dibawahnya (seperti dalam kasus function dalam function)
 // ================================================================================
 
-
 // ================================================================================
 // Kode Scope:
-
 
 // Global Scope
 
@@ -33,18 +30,17 @@ console.log('===Scope===')
 // console.log(counter)
 // ================================================================================
 
-
 // ================================================================================
 // Kode Nested Function:
 
 function first() {
-    // Ini akan menjadi global function bagi function second()
-    let firstVar = "First"
+  // Ini akan menjadi global function bagi function second()
+  let firstVar = "First";
 
-    return function second() {
-        console.log(firstVar)
-    }
+  return function second() {
+    console.log(firstVar);
+  };
 }
 
-first()()
+first()();
 // ================================================================================

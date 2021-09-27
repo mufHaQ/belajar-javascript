@@ -1,5 +1,4 @@
-console.log("===Function Generator===")
-
+console.log("===Function Generator===");
 
 // ================================================================================
 // Function Generator:
@@ -9,7 +8,6 @@ console.log("===Function Generator===")
 // * Untuk mengembalikan data ditiap iterasi, bisa bisa menggunakan kata kunci yield diikuti datanya
 // * Tidak bisa digunakan secara langsung seperti Array
 // ================================================================================
-
 
 // ================================================================================
 // Kode Function Generator:
@@ -27,7 +25,6 @@ console.log("===Function Generator===")
 //     console.log(name)
 // }
 // ================================================================================
-
 
 // ================================================================================
 // Contoh Komplels:
@@ -47,13 +44,11 @@ console.log("===Function Generator===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Lazy Evaluation:
 // * Generator bersifat Lazy
 // * Jadi artinya jika data belum kita ambil dari generator, maka yield selanjutnya tidak akan dieksekusi
 // ================================================================================
-
 
 // ================================================================================
 // Contoh
@@ -82,7 +77,7 @@ console.log("===Function Generator===")
 
 // const angkaGanjil = buatGanjilArray(50) // Akan menjalankan console.log(`Yield ke-${i}`)
 
-// const angkaGanjil = buatGanjil(50) // Akan menjalankan console.log(`Yield ke-${i}`) dan yield 
+// const angkaGanjil = buatGanjil(50) // Akan menjalankan console.log(`Yield ke-${i}`) dan yield
 
 // for (const ganjil of angkaGanjil) {
 //     console.log(ganjil)
@@ -92,22 +87,21 @@ console.log("===Function Generator===")
 // let angkaGanjil = buatGanjilArray(50) // Akan dieksekusi
 // ================================================================================
 
-
 // ================================================================================
 // Kode Lazy Generator:
 
 function* buatGanjil(value) {
-    for (let i = 1; i <= value; i++) {
-        if (i % 2 !== 0) {
-            console.log(`Perulangan ke-${i}`)
-            yield i
-        }
+  for (let i = 1; i <= value; i++) {
+    if (i % 2 !== 0) {
+      console.log(`Perulangan ke-${i}`);
+      yield i;
     }
+  }
 }
 
-const angkaGanjil = buatGanjil(100)
+const angkaGanjil = buatGanjil(100);
 
-console.log(angkaGanjil.next().value) // 1
-console.log(angkaGanjil.next().value) // 3
-console.log(angkaGanjil.next().value) // 5
+console.log(angkaGanjil.next().value); // 1
+console.log(angkaGanjil.next().value); // 3
+console.log(angkaGanjil.next().value); // 5
 // ================================================================================

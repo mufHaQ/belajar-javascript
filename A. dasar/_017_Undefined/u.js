@@ -1,4 +1,4 @@
-console.info("===Indefined===")
+console.info("===Indefined===");
 
 // ================================================================================
 // Undefined:
@@ -6,7 +6,6 @@ console.info("===Indefined===")
 // * Sebuah variable yang belum ditambahkan nilai, maka variable tersebut akan berisi undefined
 // * Undefined berbeda dengan null
 // ================================================================================
-
 
 // ================================================================================
 // Undefined Variable:
@@ -18,7 +17,6 @@ console.info("===Indefined===")
 //     console.info("DEFINED")
 // }
 // ================================================================================
-
 
 // ================================================================================
 // Undefined Array Value:
@@ -32,15 +30,14 @@ console.info("===Indefined===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Undefined Object Property:
 
-let person = {}
+let person = {};
 
 if (person.name === undefined) {
-    console.warn("OBJECT UNDEFINED")
+  console.warn("OBJECT UNDEFINED");
 } else {
-    console.info("OBJECT DEFINED")
+  console.info("OBJECT DEFINED");
 }
 // ================================================================================

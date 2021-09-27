@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.info('===Operator In===')
-
+console.info("===Operator In===");
 
 // ================================================================================
 // Operator In:
@@ -9,14 +8,13 @@ console.info('===Operator In===')
 // * In operator menghasilkan boolean
 
 const person = {
-    nama: "Dliyaulhaq",
-    alamat: "Indonesia"
-}
+  nama: "Dliyaulhaq",
+  alamat: "Indonesia",
+};
 
-const result = "alamat" in person // true
-console.info(result)
+const result = "alamat" in person; // true
+console.info(result);
 // ================================================================================
-
 
 // ================================================================================
 // Peringatan:
@@ -24,9 +22,8 @@ console.info(result)
 // * Jadi jika nilai property/indexnya undefined atau null, akan dianggap ada
 // ================================================================================
 
-
 // ================================================================================
-const arr = [null, "Ulhaq", undefined]
-const hasil = 2 in arr // true, karena index 2 ada isinya walaupun undefined
-console.info(hasil)
+const arr = [null, "Ulhaq", undefined];
+const hasil = 2 in arr; // true, karena index 2 ada isinya walaupun undefined
+console.info(hasil);
 // ================================================================================

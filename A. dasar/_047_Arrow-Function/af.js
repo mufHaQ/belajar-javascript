@@ -1,5 +1,4 @@
-console.log("===Arrow Function===")
-
+console.log("===Arrow Function===");
 
 // ================================================================================
 // Arrow Function:
@@ -13,7 +12,6 @@ console.log("===Arrow Function===")
 //      4. Tidak bisa mengakses super (yang biasanya ada didalam Object)
 // ================================================================================
 
-
 // ================================================================================
 // Kode Arrow Function:
 
@@ -24,13 +22,11 @@ console.log("===Arrow Function===")
 // sayHello("Ulhaq")
 // ================================================================================
 
-
 // ================================================================================
 // Arrot Function Tanpa Block '{}':
 // * Jika sebuah Arrow Function isinya sederhana, kita bisa membuat Arrow Function tanpa block
 // * Bisa langsung mereturn nilai tanpa kata kunci 'return'
 // ================================================================================
-
 
 // ================================================================================
 // Kode Arrot Function Tanpa Block:
@@ -39,7 +35,6 @@ console.log("===Arrow Function===")
 // sayHello("Dliyaulhaq")
 // ================================================================================
 
-
 // ================================================================================
 // Kode Arrow Function Tanpa Block, Return Value:
 
@@ -47,22 +42,20 @@ console.log("===Arrow Function===")
 // console.log(sum(100, 100))
 // ================================================================================
 
-
 // ================================================================================
 // Arrow Function Sebagai Prameter:
 // * Karena Arrow Function seprti Anonymous Function
 // * Jadi kita juga bisa menggunakan Arrow Function sebagai parameter di function lain
 // ================================================================================
 
-
 // ================================================================================
 // Kode Arrow Function Sebagai Prameter:
 
 function sayHello(name, callback) {
-    return callback(name)
+  return callback(name);
 }
 
-let sh = sayHello("Ulhaq", name => name)
+let sh = sayHello("Ulhaq", (name) => name);
 
-console.log(sh)
+console.log(sh);
 // ================================================================================

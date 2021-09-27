@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Set===")
-
+console.log("===Set===");
 
 // ================================================================================
 // Set:
@@ -10,7 +9,6 @@ console.log("===Set===")
 // * Jika kita menambahkan data yang sama, maka data hanya akan diterima satu saja
 // * Set mengimplementasikan kontrak iterable, sehingga bisa diiterasi secara default
 // * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-
 
 // Set Instance Method & Property:
 // |--Method & Property-|---------------Keterangan--------------|
@@ -21,20 +19,19 @@ console.log("===Set===")
 // | forEach(value =>)  | Melakukan iterasi Set                 |
 // |--------------------|---------------------------------------|
 
-
 // Kode: Set
 {
-    const set = new Set()
+  const set = new Set();
 
-    set.add("Dliyaulhaq")
-    set.add("Mufliansyah")
-    set.add("Mufliansyah") // Menimpa data sebelumnya
+  set.add("Dliyaulhaq");
+  set.add("Mufliansyah");
+  set.add("Mufliansyah"); // Menimpa data sebelumnya
 
-    console.table(set)
-    console.log(set.has("Dliyaulhaq")) // true
-    console.log(set.size) // 2
+  console.table(set);
+  console.log(set.has("Dliyaulhaq")); // true
+  console.log(set.size); // 2
 
-    console.log("\nIterasi Set:")
-    set.forEach(val => console.log(val))
+  console.log("\nIterasi Set:");
+  set.forEach((val) => console.log(val));
 }
 // ================================================================================

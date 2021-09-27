@@ -1,5 +1,4 @@
-console.info("===Switch Expression===")
-
+console.info("===Switch Expression===");
 
 // ================================================================================
 // Switch Statement:
@@ -7,7 +6,6 @@ console.info("===Switch Expression===")
 // * Kondisi di Switch hanya berlaku untuk perbandingan '=='
 // * Kita bisa memberikan kondisi dibagian case
 // ================================================================================
-
 
 // ================================================================================
 // Contoh Program:
@@ -30,20 +28,19 @@ console.info("===Switch Expression===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Case dengan Kondisi:
 
-let names = ["Dliyaulhaq", "Mufliansyah", 1, 2, 3]
+let names = ["Dliyaulhaq", "Mufliansyah", 1, 2, 3];
 
 switch (true) {
-    case names.length >= 5:
-        console.log("Maaf, nama anda terlalu panjang!")
-        break
-    case names.length < 5:
-        console.log("Selamat datang!")
-        break
-    default:
-        console.log("Maaf, terjadi kesalahan!")
+  case names.length >= 5:
+    console.log("Maaf, nama anda terlalu panjang!");
+    break;
+  case names.length < 5:
+    console.log("Selamat datang!");
+    break;
+  default:
+    console.log("Maaf, terjadi kesalahan!");
 }
 // ================================================================================

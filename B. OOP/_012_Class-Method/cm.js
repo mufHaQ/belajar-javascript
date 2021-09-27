@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Class Method===")
-
+console.log("===Class Method===");
 
 // ================================================================================
 // Class Method:
@@ -10,20 +9,20 @@ console.log("===Class Method===")
 // * Khusus untuk method sebaiknya kita menambahkan method ke prototype, bukan ke instance object
 // * Untungnya di class, ada cara mudah untuk menambahkan method dan secara otomatis ditambahkan ke dalam prototype
 
-
 // Kode: Class Method
 class Person {
-    constructor(name) {
-        this.name = name
-        // this.sayHello = () => { } // Tidak direkomendasikan membuat method di sini karena akan masuk menjadi instance object
-    }
+  constructor(name) {
+    this.name = name;
+    // this.sayHello = () => { } // Tidak direkomendasikan membuat method di sini karena akan masuk menjadi instance object
+  }
 
-    sayHello(name) { // Masuk ke prototype
-        console.log(`Hi ${name}, my name is ${this.name}`)
-    }
+  sayHello(name) {
+    // Masuk ke prototype
+    console.log(`Hi ${name}, my name is ${this.name}`);
+  }
 }
 
-const ulhaq = new Person("Dliyaulhaq Mufliansyah")
-console.log(ulhaq)
-ulhaq.sayHello("Budi")
+const ulhaq = new Person("Dliyaulhaq Mufliansyah");
+console.log(ulhaq);
+ulhaq.sayHello("Budi");
 // ================================================================================

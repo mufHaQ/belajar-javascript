@@ -1,5 +1,4 @@
-console.info("===Null===")
-
+console.info("===Null===");
 
 // ================================================================================
 // Null:
@@ -8,15 +7,14 @@ console.info("===Null===")
 // * Sedangkan undefined adalah variable yang belum ada valuenya
 // ================================================================================
 
-
 // ================================================================================
-let nama = null
+let nama = null;
 
 if (nama === undefined) {
-    alert("Hello UNDEFINED")
+  alert("Hello UNDEFINED");
 } else if (nama === null) {
-    alert("Hello NULL")
+  alert("Hello NULL");
 } else {
-    alert(`Hello ${nama}`)
+  alert(`Hello ${nama}`);
 }
 // ================================================================================

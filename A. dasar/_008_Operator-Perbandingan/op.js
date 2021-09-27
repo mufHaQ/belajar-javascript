@@ -1,12 +1,11 @@
-document.writeln("Operator Perbandingan")
-document.writeln("</br>")
+document.writeln("Operator Perbandingan");
+document.writeln("</br>");
 
 // ================================================================================
 // Operasi Perbandingan:
 // * Operasi perbandingan adalah operasi untuk membandingakan dua data
 // * Operasi perbandingan adalah operasi yang menghasilkan nilai boolean (true or false)
 // ================================================================================
-
 
 // ================================================================================
 // Operator Perbandingan:
@@ -22,17 +21,16 @@ document.writeln("</br>")
 // -----------------------------------------------
 // ================================================================================
 
-
 // ================================================================================
-let result = 5 == "5" // true
-document.writeln("<p>" + result + "</p>")
+let result = 5 == "5"; // true
+document.writeln("<p>" + result + "</p>");
 
-result = 5 === "5" // false
-document.writeln("<p>" + result + "</p>")
+result = 5 === "5"; // false
+document.writeln("<p>" + result + "</p>");
 
-result = 5 < "10" // true
-document.writeln("<p>" + result + "</p>")
+result = 5 < "10"; // true
+document.writeln("<p>" + result + "</p>");
 
-result = 5 > "10" // false
-document.writeln("<p>" + result + "</p>")
+result = 5 > "10"; // false
+document.writeln("<p>" + result + "</p>");
 // ================================================================================

@@ -1,5 +1,4 @@
-console.log("===Object Method===")
-
+console.log("===Object Method===");
 
 // ================================================================================
 // Object Method:
@@ -7,7 +6,6 @@ console.log("===Object Method===")
 // * Cara pembuatannya pun sama dengan Function sebagai value
 // * Function di Object kadang disebut juga sebagai Object Method
 // ================================================================================
-
 
 // ================================================================================
 // Kode Object Method:
@@ -26,7 +24,6 @@ console.log("===Object Method===")
 
 // person.sayHello(person.name)
 // ================================================================================
-
 
 // ================================================================================
 // Kode Menambahkan Method ke Object:

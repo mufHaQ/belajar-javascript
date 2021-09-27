@@ -1,5 +1,4 @@
-console.log("===For Of===")
-
+console.log("===For Of===");
 
 // ================================================================================
 // For Of:
@@ -7,17 +6,16 @@ console.log("===For Of===")
 // * For Of tidak bisa digunakan untuk melakukan iterasi pada tipe data Object, karena Object bukanlan iterable
 // ================================================================================
 
-
 // ================================================================================
 // Kode For Of:
 
-const names = ["Dliyaulhaq", "Mufliansyah"]
+const names = ["Dliyaulhaq", "Mufliansyah"];
 
 for (const value of names) {
-    // console.log(`${value}`)
-    for (const char of value) {
-        console.log(char)
-    }
-    console.log('\n')
+  // console.log(`${value}`)
+  for (const char of value) {
+    console.log(char);
+  }
+  console.log("\n");
 }
 // ================================================================================

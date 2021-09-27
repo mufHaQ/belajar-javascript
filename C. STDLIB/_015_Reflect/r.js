@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Reflect===")
-
+console.log("===Reflect===");
 
 // ================================================================================
 // Reflect:
@@ -10,20 +9,19 @@ console.log("===Reflect===")
 // * Bentuknya adalah static, menggunakan banyak sekali static method
 // * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect
 
-
 // Kode: Reflect
 {
-    const person = {}
+  const person = {};
 
-    Reflect.set(person, "firstName", "Dliyaulhaq")
-    Reflect.set(person, "lastName", "Mufliansyah")
+  Reflect.set(person, "firstName", "Dliyaulhaq");
+  Reflect.set(person, "lastName", "Mufliansyah");
 
-    console.log(person)
+  console.log(person);
 
-    console.log(Reflect.has(person, "firstName")) // true
-    console.log(Reflect.has(person, "middleName")) // false
-    console.log(Reflect.has(person, "lastName")) // true
+  console.log(Reflect.has(person, "firstName")); // true
+  console.log(Reflect.has(person, "middleName")); // false
+  console.log(Reflect.has(person, "lastName")); // true
 
-    console.log(Reflect.get(person, "firstName")) // Dliyaulhaq
+  console.log(Reflect.get(person, "firstName")); // Dliyaulhaq
 }
 // ================================================================================

@@ -1,11 +1,10 @@
-console.info('===Optional Chaining===')
+console.info("===Optional Chaining===");
 
 // ================================================================================
 // Optional Chaining:
 // * Optional Chaining (?) merupakan operator yang digunakan untuk mengamankan ketika kita ingin mengakses property sebuah object dari data nullish
 // * Jika kita mencoba mengakses property object dari data nullish tanpa menggunakan optional chaining operator, maka akan terhadi error
 // ================================================================================
-
 
 // ================================================================================
 // Contoh Penanganan Error Menggunakan If Expression:
@@ -33,16 +32,15 @@ console.info('===Optional Chaining===')
 // ----------------------------------------
 // ================================================================================
 
-
 // ================================================================================
 // Penggunaan Optional Chaining Operator:
 
 let person = {
-    address: {
-        country: "Indonesia"
-    }
-}
+  address: {
+    country: "Indonesia",
+  },
+};
 
-let country = person.address?.country ?? "Data Tidak Ada"
-console.info(country)
+let country = person.address?.country ?? "Data Tidak Ada";
+console.info(country);
 // ================================================================================

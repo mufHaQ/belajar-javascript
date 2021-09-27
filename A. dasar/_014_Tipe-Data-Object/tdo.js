@@ -1,4 +1,4 @@
-console.info("===Tipe Data Object===")
+console.info("===Tipe Data Object===");
 
 // ================================================================================
 // Associative Array:
@@ -8,14 +8,12 @@ console.info("===Tipe Data Object===")
 // * Jika kita memaksakan memasukkan data bukan number di index Array, maka JavaScript akan merubah tipe data Array menjadi Object, dan ini bisa berbahaya, kerena beberapa operasi di Array mungkin bisa berubah hasilnya
 // ================================================================================
 
-
 // ================================================================================
 // Tipe Data Object:
 // * Tipe data Object adalah tipe data yang mirip dengan tipe data Array
 // * Yang membedakan adalah, index pada tipe data Object bisa menggunakan string
 // * Index di Object biasanya disebut attributes atau properties, bukan index
 // ================================================================================
-
 
 // ================================================================================
 // Membuat Object:
@@ -35,7 +33,6 @@ console.info("===Tipe Data Object===")
 // console.table(orang)
 // ================================================================================
 
-
 // ================================================================================
 // Membuat Object dengan Propertes:
 
@@ -52,17 +49,16 @@ console.info("===Tipe Data Object===")
 // console.table(orang)
 // ================================================================================
 
-
 // ================================================================================
 // Mengakses Property Object:
 
 const orang = {
-    nama: "Dliyaulhaq Mufliansyah",
-    alamat: "Indonesia",
-    umur: 16
-}
+  nama: "Dliyaulhaq Mufliansyah",
+  alamat: "Indonesia",
+  umur: 16,
+};
 
-console.info(`Nama: ${orang['nama']}`) // Bisa seperti ini
-console.info(`Alamat: ${orang.alamat}`) // Bisa seperti ini
-console.info(`Umur: ${orang.umur}`)
+console.info(`Nama: ${orang["nama"]}`); // Bisa seperti ini
+console.info(`Alamat: ${orang.alamat}`); // Bisa seperti ini
+console.info(`Umur: ${orang.umur}`);
 // ================================================================================

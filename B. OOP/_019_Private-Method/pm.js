@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Private Method===")
-
+console.log("===Private Method===");
 
 // ================================================================================
 // Private Method:
@@ -10,27 +9,26 @@ console.log("===Private Method===")
 // * Caranya sama seperti private field, dengan menambahkan tanda '#' di depan nama method
 // * https://github.com/tc39/proposal-private-methods
 
-
 // Kode: Private Method
 class Person {
-    sayHello(name) {
-        if (name) {
-            this.#sayHelloWithName(name)
-        } else {
-            this.#sayHelloWithoutName()
-        }
+  sayHello(name) {
+    if (name) {
+      this.#sayHelloWithName(name);
+    } else {
+      this.#sayHelloWithoutName();
     }
+  }
 
-    #sayHelloWithName(name) {
-        console.log(`Hello ${name}`)
-    }
+  #sayHelloWithName(name) {
+    console.log(`Hello ${name}`);
+  }
 
-    #sayHelloWithoutName() {
-        console.log('Hello')
-    }
+  #sayHelloWithoutName() {
+    console.log("Hello");
+  }
 }
 
-const ulhaq = new Person()
-ulhaq.sayHello()
-ulhaq.sayHello("Ulhaq")
+const ulhaq = new Person();
+ulhaq.sayHello();
+ulhaq.sayHello("Ulhaq");
 // ================================================================================

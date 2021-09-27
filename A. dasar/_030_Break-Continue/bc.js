@@ -1,5 +1,4 @@
-console.info("===Break dan Continue===")
-
+console.info("===Break dan Continue===");
 
 // ================================================================================
 // Break dan Continue:
@@ -7,7 +6,6 @@ console.info("===Break dan Continue===")
 // * Sama dengan perulangan, break juga digunakan untuk menghentikan seluruh perulangan
 // * Namun berbeda dengan continue, continue digunakan untuk menghentikan perulangan saat ini, lalu melanjutkan ke perulangan berikutnya
 // ================================================================================
-
 
 // ================================================================================
 // Break:
@@ -24,15 +22,14 @@ console.info("===Break dan Continue===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Continue:
 
-for (let i = 1; i <= 100 ; i++) {
-    if (i % 2 === 0) {
-        continue
-    }
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    continue;
+  }
 
-    console.log(`Perulangan Ganjil ke-${i}`)
+  console.log(`Perulangan Ganjil ke-${i}`);
 }
 // ================================================================================

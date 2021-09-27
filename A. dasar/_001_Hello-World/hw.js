@@ -1,1 +1,1 @@
-document.writeln("External Javascript")
+document.writeln("External Javascript");

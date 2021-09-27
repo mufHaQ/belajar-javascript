@@ -1,4 +1,4 @@
-console.log("Console")
+console.log("Console");
 
 // ================================================================================
 // Console:
@@ -14,11 +14,10 @@ console.log("Console")
 // ------------------------------------------------------------------
 // ================================================================================
 
-
 // ================================================================================
 // Urutan Level:
-console.debug("console debug") // harus mengantifkan verbose
-console.info("console info") // Sama seperti log, dan menjadi default level
-console.warn("console warn")
-console.error("console error")
+console.debug("console debug"); // harus mengantifkan verbose
+console.info("console info"); // Sama seperti log, dan menjadi default level
+console.warn("console warn");
+console.error("console error");
 // ================================================================================

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Super Method===")
-
+console.log("===Super Method===");
 
 // ================================================================================
 // Super Method:
@@ -9,22 +8,21 @@ console.log("===Super Method===")
 // * Caranya dengan menggunakan 'super.method_name()'
 // * Dengan kata lain, super adalah reference ke parent prototype, mirip seperti __proto__
 
-
 // Kode: Super Method
 class Shape {
-    paint() {
-        console.log("Paint Shape")
-    }
+  paint() {
+    console.log("Paint Shape");
+  }
 }
 
 class Circle extends Shape {
-    paint() {
-        super.paint() // Memanggil method paint() pada parent class
-        console.log("Paint Circle")
-    }
+  paint() {
+    super.paint(); // Memanggil method paint() pada parent class
+    console.log("Paint Circle");
+  }
 }
 
-const circle = new Circle()
-console.log(circle)
-circle.paint()
+const circle = new Circle();
+console.log(circle);
+circle.paint();
 // ================================================================================

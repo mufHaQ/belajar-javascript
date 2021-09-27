@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Parameter di Constructor Function===")
+console.log("===Parameter di Constructor Function===");
 
 // ================================================================================
 // Parameter di Constructor Function:
@@ -9,15 +9,15 @@ console.log("===Parameter di Constructor Function===")
 
 // Kode: Parameter di Constructor Function
 {
-    function Person(first_name, last_name) {
-        this.first_name = first_name
-        this.last_name = last_name
-        this.sayHello = name => {
-            console.log(`Hello ${name}, my name is ${this.first_name} ${this.last_name}`)
-        }
-    }
+  function Person(first_name, last_name) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.sayHello = (name) => {
+      console.log(`Hello ${name}, my name is ${this.first_name} ${this.last_name}`);
+    };
+  }
 
-    const ulhaq = new Person("Dliyaulhaq", "Mufliansyah")
-    ulhaq.sayHello("Budi")
+  const ulhaq = new Person("Dliyaulhaq", "Mufliansyah");
+  ulhaq.sayHello("Budi");
 }
 // ================================================================================

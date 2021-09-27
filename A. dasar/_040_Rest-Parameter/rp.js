@@ -1,5 +1,4 @@
-console.log("===Rest Parameter===")
-
+console.log("===Rest Parameter===");
 
 // ================================================================================
 // Rest Parameter:
@@ -8,7 +7,6 @@ console.log("===Rest Parameter===")
 // * Rest Parameter harus ditempatkan diposisi paling akhir, tidak boleh ditengah/depan kecuali memang hanya satu parameter
 // * Di bahasa pemrogramman lain, ada juga yang menyebutnya variable argument
 // ================================================================================
-
 
 // ================================================================================
 // Kode Rest Parameter:
@@ -23,14 +21,12 @@ console.log("===Rest Parameter===")
 // sum("Jagung", 1, 2, 3, 10, 99, 19, 100)
 // ================================================================================
 
-
 // ================================================================================
 // Spread Syntax:
 // * Kadang kita terlanjur memiliki data berupa Array
 // * Tapi untungnya kita juga bisa mengirim Array ke Rest Parameter
 // * Kita bisa gunakan '...' diikuti dengan Arraynya ketika memanggil function
 // ================================================================================
-
 
 // ================================================================================
 // Kode Spread Syntax:
@@ -47,7 +43,6 @@ console.log("===Rest Parameter===")
 // sum("Banana", ...values) // Spread Syntax
 // ================================================================================
 
-
 // ================================================================================
 // Arguments Object:
 // * Sebelum ada fitur rest parameter, di JavaScript sudah ada fitur yang bernama Arguments Object
@@ -55,19 +50,18 @@ console.log("===Rest Parameter===")
 // * Namun perlu diingat, bahwa untuk JavaScript saat ini, disarankan untuk lebih menggunakan Rest Parameters dibandingkan dengan Arguments Object
 // ================================================================================
 
-
 // ================================================================================
 // Kode Arguments Object:
 
 function oldSum(name) {
-    let total = 0
-    for (const item of arguments) {
-        if (item === name) {
-            continue
-        }
-        total += item
+  let total = 0;
+  for (const item of arguments) {
+    if (item === name) {
+      continue;
     }
-    console.log(`Total ${name} is ${total}`)
+    total += item;
+  }
+  console.log(`Total ${name} is ${total}`);
 }
-oldSum("Durian", ...[10, 10, 10, 10, 10])
+oldSum("Durian", ...[10, 10, 10, 10, 10]);
 // ================================================================================

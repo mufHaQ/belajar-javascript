@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Number===")
-
+console.log("===Number===");
 
 // ================================================================================
 // Number:
@@ -9,19 +8,17 @@ console.log("===Number===")
 // * Jika data tidak bisa dikonversi ke number, maka hasilnya akan menjadi NaN
 // * https://developer.mozilla.org/en-US/Web/JavaScript/Reference/Global_Objects/Number
 
-
 // Kode: Number
 {
-    console.log("Number:")
-    const input = "12345"
-    const number = Number(input)
+  console.log("Number:");
+  const input = "12345";
+  const number = Number(input);
 
-    console.log(typeof input)   // string
-    console.log(typeof number)  // number
-    console.log(Number("NaN"))  // NaN
+  console.log(typeof input); // string
+  console.log(typeof number); // number
+  console.log(Number("NaN")); // NaN
 }
 // ================================================================================
-
 
 // ================================================================================
 // Number Static Properties:
@@ -30,18 +27,16 @@ console.log("===Number===")
 //      2. Number.MAX_VALUE untuk mendapatkan number maksimal
 // * https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/number#static_properties
 
-
 // Kode: Number Static Properties
 {
-    console.log("\nNumber Static Properties:")
-    console.log(Number.MAX_VALUE)
-    console.log(Number.MIN_VALUE)
-    console.log(Number.MAX_SAFE_INTEGER)
-    console.log(Number.MIN_SAFE_INTEGER)
-    console.log(Number.NaN)
+  console.log("\nNumber Static Properties:");
+  console.log(Number.MAX_VALUE);
+  console.log(Number.MIN_VALUE);
+  console.log(Number.MAX_SAFE_INTEGER);
+  console.log(Number.MIN_SAFE_INTEGER);
+  console.log(Number.NaN);
 }
 // ================================================================================
-
 
 // ================================================================================
 // Number Static Methods:
@@ -50,18 +45,16 @@ console.log("===Number===")
 //      2. Number.isInteger(value) untuk mengecek apakah value berupa integer atau bukan
 // * https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/number#static_methods
 
-
 // Kode: Number Static Methods
 {
-    console.log("\nNumber Static Methods:")
+  console.log("\nNumber Static Methods:");
 
-    const data = Number("12345")
-    
-    console.log(Number.isInteger(data))
-    console.log(Number.isNaN(data))
+  const data = Number("12345");
+
+  console.log(Number.isInteger(data));
+  console.log(Number.isNaN(data));
 }
 // ================================================================================
-
 
 // ================================================================================
 // Number Instance Methods:
@@ -71,14 +64,13 @@ console.log("===Number===")
 //      2. Number.toString(radix) untuk mengubah number menjadi string sesuai radix
 // * https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/number#instance_methods
 
-
 // Kode: Number Instance Methods
 {
-    console.log("Number Instance Methods:")
+  console.log("Number Instance Methods:");
 
-    const val = Number(12345)
-    console.log(val.toString(2)) // Binary
-    console.log(val.toLocaleString("id-ID")) // 12.345
-    console.log(val.toLocaleString("en-US")) // 12,345
+  const val = Number(12345);
+  console.log(val.toString(2)); // Binary
+  console.log(val.toLocaleString("id-ID")); // 12.345
+  console.log(val.toLocaleString("en-US")); // 12,345
 }
 // ================================================================================

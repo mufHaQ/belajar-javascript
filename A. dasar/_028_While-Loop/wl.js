@@ -1,5 +1,4 @@
-console.info("===While Loop===")
-
+console.info("===While Loop===");
 
 // ================================================================================
 // While Loop:
@@ -7,12 +6,11 @@ console.info("===While Loop===")
 // * Di While Loop, hanya terdapat kondisi perulangan, tanpa ada init statement dan post statement
 // ================================================================================
 
-
 // ================================================================================
-let counter = 1
+let counter = 1;
 
-while(counter <= 10) {
-    console.info(`Perulangan ke-${counter}`)
-    counter++
+while (counter <= 10) {
+  console.info(`Perulangan ke-${counter}`);
+  counter++;
 }
 // ================================================================================

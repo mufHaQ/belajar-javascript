@@ -1,5 +1,5 @@
-document.writeln("Operator Logika")
-document.writeln("</br>")
+document.writeln("Operator Logika");
+document.writeln("</br>");
 
 // ================================================================================
 // Operator Logika:
@@ -35,15 +35,14 @@ document.writeln("</br>")
 // ----------------------
 // ================================================================================
 
-
 // ================================================================================
-const nilaiUjian = 90
-const nilaiAbsensi = 70
+const nilaiUjian = 90;
+const nilaiAbsensi = 70;
 
-const lulusUjian = nilaiUjian > 75
-const lulusAbsensi = nilaiAbsensi > 75
+const lulusUjian = nilaiUjian > 75;
+const lulusAbsensi = nilaiAbsensi > 75;
 
-const lulus = lulusUjian && lulusAbsensi
+const lulus = lulusUjian && lulusAbsensi;
 
-document.writeln(lulus)
+document.writeln(lulus);
 // ================================================================================

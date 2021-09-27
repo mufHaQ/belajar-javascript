@@ -1,5 +1,4 @@
-console.log("===Label===")
-
+console.log("===Label===");
 
 // ================================================================================
 // Label:
@@ -8,7 +7,6 @@ console.log("===Label===")
 // * Dengan menggunakan label, kita bisa melakukan break dan continue terhadap perulangan yang kita inginkan, asalkan pada perulangannya kita gunakan label
 // * Untuk membuat label, kita bisa menggunakan nama label lalu diikuti dengan : (titik dua)
 // ================================================================================
-
 
 // ================================================================================
 // Contoh Label:
@@ -22,16 +20,15 @@ console.log("===Label===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Continue atau Break di Label:
 
 loopi: for (let i = 1; i <= 10; i++) {
-    loopj: for (let j = 1; j <= 100; j++) {
-        if (j > 10) {
-            continue loopi
-        }
-        console.log(`${i} - ${j}`)
+  loopj: for (let j = 1; j <= 100; j++) {
+    if (j > 10) {
+      continue loopi;
     }
+    console.log(`${i} - ${j}`);
+  }
 }
 // ================================================================================

@@ -1,5 +1,4 @@
-console.info("===Falsy dan Truthy===")
-
+console.info("===Falsy dan Truthy===");
 
 // ================================================================================
 // Falsy:
@@ -16,7 +15,6 @@ console.info("===Falsy dan Truthy===")
 // | undefined      | Undefined dinaggap false              |
 // | NaN            | Not a Number dianggap false           |
 // ----------------------------------------------------------
-
 
 // Contoh Falsy:
 
@@ -35,7 +33,6 @@ console.info("===Falsy dan Truthy===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Truthy:
 // * Truthy adalah kebalikan dari Falsy, dimana datanya dianggap bernilai true
@@ -49,7 +46,6 @@ console.info("===Falsy dan Truthy===")
 // | Not undefined  | Yang tidak undefined                                  |
 // | Not NaN        | Yang tidak NaN                                        |
 // --------------------------------------------------------------------------
-
 
 // Contoh Truthy:
 

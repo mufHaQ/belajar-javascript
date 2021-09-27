@@ -1,5 +1,4 @@
-console.log("===Function===")
-
+console.log("===Function===");
 
 // ================================================================================
 // Function:
@@ -9,16 +8,15 @@ console.log("===Function===")
 // * Di bahasa pemrograman lain, function bisa juga disebut method
 // ================================================================================
 
-
 // ================================================================================
 // Kode Function:
 
 function helloWorld() {
-    console.log("Hello World!")
+  console.log("Hello World!");
 }
 
-helloWorld()
-helloWorld()
-helloWorld()
-helloWorld()
+helloWorld();
+helloWorld();
+helloWorld();
+helloWorld();
 // ================================================================================

@@ -1,5 +1,4 @@
-console.log("===Debugger===")
-
+console.log("===Debugger===");
 
 // ================================================================================
 // Debugger:
@@ -9,13 +8,12 @@ console.log("===Debugger===")
 // * Dan mungkin tidak semua browser mendukung proses debugging
 // ================================================================================
 
-
 // ================================================================================
 function createFullName(firstName, lastName) {
-    // debugger // Akan masuk ke mode debugger
-    return `${firstName} ${firstName}`
+  // debugger // Akan masuk ke mode debugger
+  return `${firstName} ${firstName}`;
 }
 
-const myName = createFullName("Dliyaulhaq", "Mufliansyah")
-console.log(myName)
+const myName = createFullName("Dliyaulhaq", "Mufliansyah");
+console.log(myName);
 // ================================================================================

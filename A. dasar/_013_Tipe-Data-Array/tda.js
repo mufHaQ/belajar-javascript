@@ -1,4 +1,4 @@
-console.log("===Tipe Data Array===")
+console.log("===Tipe Data Array===");
 
 // ================================================================================
 // Tipe Data Array:
@@ -6,7 +6,6 @@ console.log("===Tipe Data Array===")
 // * Di JavaScript, array memiliki sifat dinamis, tidak ada batasan
 // * Kita bisa memasukkan tipe data apapun secara bersamaan
 // ================================================================================
-
 
 // ================================================================================
 // Membuat Array
@@ -18,14 +17,12 @@ console.log("===Tipe Data Array===")
 // console.log(arryNama)
 // ================================================================================
 
-
 // ================================================================================
 // Cara Kerja Array:
 // * Setiap data pada Array disimpan dalam posisi berurutan, dimana urutan pertama dimulai dari nomor 0
 // * Urutan Array kita sebut dengan index
 // * Setiap kita menambah data ke Array, otomatis data akan disimpan di urutan terakhir
 // ================================================================================
-
 
 // ================================================================================
 // let names = []
@@ -34,7 +31,6 @@ console.log("===Tipe Data Array===")
 
 // console.table(names)
 // ================================================================================
-
 
 // ================================================================================
 // Operasi di Array:
@@ -46,34 +42,34 @@ console.log("===Tipe Data Array===")
 // | delete array[index]    | Menghapus data di posisi index, namun index tidak bergeser |
 // ---------------------------------------------------------------------------------------
 
-let names = []
-names.push("Dliyaulhaq", "Mufliansyah", "Orang")
+let names = [];
+names.push("Dliyaulhaq", "Mufliansyah", "Orang");
 
-console.table(names)
-
-// console.info(names[0])
-// console.info(names[1])
-
-names = [names[1], names[0], names[2]]
+console.table(names);
 
 // console.info(names[0])
 // console.info(names[1])
 
-console.table(names)
+names = [names[1], names[0], names[2]];
 
-delete names[1]
+// console.info(names[0])
+// console.info(names[1])
 
-console.table(names) // index ke 1 hilang, tetapi posisi index 2 tetap, dan panjang array aslinya akan tetap sama
+console.table(names);
 
-names.push("Ulhaq") // Tidak mengisi index yang kosong, tetapi masuk pada bagian akhir
+delete names[1];
 
-console.table(names)
+console.table(names); // index ke 1 hilang, tetapi posisi index 2 tetap, dan panjang array aslinya akan tetap sama
 
-names[1] = "Data Baru"
+names.push("Ulhaq"); // Tidak mengisi index yang kosong, tetapi masuk pada bagian akhir
 
-console.table(names)
+console.table(names);
 
-names.push(1, 2, 3, true, 5, false, 7, [8, 9, 10])
+names[1] = "Data Baru";
 
-console.table(names)
+console.table(names);
+
+names.push(1, 2, 3, true, 5, false, 7, [8, 9, 10]);
+
+console.table(names);
 // ================================================================================

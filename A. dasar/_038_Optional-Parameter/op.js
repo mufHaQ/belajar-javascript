@@ -1,5 +1,4 @@
-console.log("===Optional Parameter===")
-
+console.log("===Optional Parameter===");
 
 // ================================================================================
 // Optional Parameter:
@@ -8,13 +7,12 @@ console.log("===Optional Parameter===")
 // * Jika tidak ada value yang kita kirim, maka secara otomatis parameter tersebut bernilai undefined
 // ================================================================================
 
-
 // ================================================================================
 // Kode Optional Parameter:
 
 function sayHello(firstName, middleName, lastName) {
-    console.log(`Hello ${firstName} ${middleName ?? ''} ${lastName ?? ''}`)
+  console.log(`Hello ${firstName} ${middleName ?? ""} ${lastName ?? ""}`);
 }
 
-sayHello("Dliyaulhaq", "Mufliansyah")
+sayHello("Dliyaulhaq", "Mufliansyah");
 // ================================================================================

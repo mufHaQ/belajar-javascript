@@ -1,7 +1,6 @@
 document.writeln("Operator Matematika");
 document.writeln("</br>");
 
-
 // ================================================================================
 // Operator Matematika:
 // * JavaScript mendukung banyak sekali Operator Matematika untuk tipe data Number, seperti:
@@ -27,7 +26,6 @@ document.writeln("</br>");
 // document.writeln("<p>1 + 2 = " + result + "</p>")
 // let originalResult = result
 
-
 // result = result - 1
 // document.writeln("<p>" + originalResult + " - 1 = " + result + "</p>")
 // originalResult = result
@@ -35,7 +33,6 @@ document.writeln("</br>");
 // result = result * 2
 // document.writeln("<p>" + originalResult + " * 2 = " + result + "</p>")
 // ================================================================================
-
 
 // ================================================================================
 // Operator Augmented Assignment:
@@ -49,7 +46,6 @@ document.writeln("</br>");
 // ------------------------------------------
 // ================================================================================
 
-
 // ================================================================================
 // Operator Unary:
 // | +  | Nilai Positif                 |
@@ -57,15 +53,15 @@ document.writeln("</br>");
 // | ++ | Increment, menaikkan 1 angka  |
 // | -- | Decrement, menurunkan 1 angka |
 
-let result = +1
-document.writeln('<P>' + result + '</p>')
+let result = +1;
+document.writeln("<P>" + result + "</p>");
 
-result--
-document.writeln('<P>' + result + '</p>')
+result--;
+document.writeln("<P>" + result + "</p>");
 
-result++
-document.writeln('<P>' + result + '</p>')
+result++;
+document.writeln("<P>" + result + "</p>");
 
-result = -result
-document.writeln('<P>' + result + '</p>')
+result = -result;
+document.writeln("<P>" + result + "</p>");
 // ================================================================================

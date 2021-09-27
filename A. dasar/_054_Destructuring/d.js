@@ -1,12 +1,10 @@
-console.log("===Destructuring===")
-
+console.log("===Destructuring===");
 
 // ================================================================================
 // Destructuring:
 // * Destructuring fitur yang bisa digunakan untuk membongkar value-value di Array atau Object ke dalam variable-variable
 // * Fitur ini sangat mempermudah kita ketika ingin mengambil data dari Array atau Object tanpa harus melakukan pengambilan data satu persatu
 // ================================================================================
-
 
 // ================================================================================
 // Kode Destructuring Array:
@@ -17,7 +15,6 @@ console.log("===Destructuring===")
 // console.log(lastName)
 // console.log("Alamat: " + others[1])
 // ================================================================================
-
 
 // ================================================================================
 // Kode Destructuring Object:
@@ -43,7 +40,6 @@ console.log("===Destructuring===")
 // console.log(web)
 // ================================================================================
 
-
 // ================================================================================
 // Kode Destructuring Object Nested:
 
@@ -67,13 +63,11 @@ console.log("===Destructuring===")
 // console.log(web)
 // ================================================================================
 
-
 // ================================================================================
 // Destructuring Function Parameter:
 // * Destructuring juga bisa digunakan untuk function parameter
 // * Ini akan membuat kita menjadi mudah ketika ingin mengambil data pada Array/Object
 // ================================================================================
-
 
 // ================================================================================
 // Kode Destructuring Function Parameter Array:
@@ -84,7 +78,6 @@ console.log("===Destructuring===")
 
 // console.log(sum([10, 100]))
 // ================================================================================
-
 
 // ================================================================================
 // Kode Destructuring Function Parameter Object:
@@ -101,14 +94,12 @@ console.log("===Destructuring===")
 // displayPerson(person)
 // ================================================================================
 
-
 // ================================================================================
 // Default Value Destructuring:
 // * Kita bisa menambahkan default value
 // * Misal jika kita ingin melakukan destructuring Array tetapi yang diberikan bukan Array, maka kita bisa memberikan nilai default
 // * Begitu juga pada Object, jika ternyata property tidak ada, maka kita bisa menambahkan default value
 // ================================================================================
-
 
 // ================================================================================
 // Kode Default Value Destructuring Array:
@@ -125,7 +116,6 @@ console.log("===Destructuring===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Kode Default Value Destructuring Object:
 
@@ -139,7 +129,6 @@ console.log("===Destructuring===")
 // console.log(`Umur: ${age}`)
 // ================================================================================
 
-
 // ================================================================================
 // Destructuring Menggunakan Nama Variable Lain:
 // * Saat melakukan destructuring di Array, kita bisa dengan mudah membuat nama variable sesuka kita
@@ -147,21 +136,25 @@ console.log("===Destructuring===")
 // * Tetapi kita sebenarnya juga bisa menggunakan nama variable lain
 // ================================================================================
 
-
 // ================================================================================
 // Kode Destructuring Menggunakan Nama Variable Lain:
 
 const person = {
-    firstName: "Dliyaulhaq",
-    lastName: "Mufliansyah",
-    address: {
-        street: "Jalan Buntu No. 10",
-        city: "Kudus",
-        country: "Indonesia"
-    }
-}
+  firstName: "Dliyaulhaq",
+  lastName: "Mufliansyah",
+  address: {
+    street: "Jalan Buntu No. 10",
+    city: "Kudus",
+    country: "Indonesia",
+  },
+};
 
-const {firstName: fn, lastName: ln, address: {street: st, city: ct, country: cn}, hobby: hb = "UNKNOWN"} = person
+const {
+  firstName: fn,
+  lastName: ln,
+  address: { street: st, city: ct, country: cn },
+  hobby: hb = "UNKNOWN",
+} = person;
 
 console.log(`Name: ${fn} ${ln}
 Address: 
@@ -169,5 +162,5 @@ Address:
     City: ${ct}
     Country: ${cn}
     Hobby: ${hb}
-`)
+`);
 // ================================================================================

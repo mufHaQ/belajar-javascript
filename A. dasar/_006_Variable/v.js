@@ -1,7 +1,6 @@
 document.writeln("Variable");
 document.writeln("</br>");
 
-
 // ================================================================================
 // Variable:
 // * Variable adalah tempat untuk menyimpan data
@@ -31,7 +30,6 @@ document.writeln("</br>");
 // document.writeln(fullName);
 // ================================================================================
 
-
 // ================================================================================
 // Membuat Variable Langsung Dengan Value:
 // * Di JavaScript, kita bisa mendeklarasikan Variable langsung dengan Valuenya
@@ -41,7 +39,6 @@ document.writeln("</br>");
 // document.writeln("</br>");
 // document.writeln(alamat)
 // ================================================================================
-
 
 // ================================================================================
 // Kata Kunci let:
@@ -55,13 +52,12 @@ document.writeln("</br>");
 // document.writeln(fullName)
 // ================================================================================
 
-
 // ================================================================================
 // Kata Kunci const:
 // * Kata kunci 'const' Variable yang ketika sudah diisi dengan value, tidak bisa diubah lagi
 // * Variable ini juga bisa dibilang constant
 
-const fullName = "Dliyaulhaq Mufliansyah"
+const fullName = "Dliyaulhaq Mufliansyah";
 // fullName = "Test" // Akan terjadi error
-document.writeln(fullName)
+document.writeln(fullName);
 // ================================================================================

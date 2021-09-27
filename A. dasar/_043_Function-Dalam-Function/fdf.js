@@ -1,5 +1,4 @@
-console.log("===Function Dalam Function===")
-
+console.log("===Function Dalam Function===");
 
 // ================================================================================
 // Function Dalam Function:
@@ -9,16 +8,15 @@ console.log("===Function Dalam Function===")
 // * Inner function hanya bisa diakses di tempat kita membuat functionnya
 // ================================================================================
 
-
 // ================================================================================
 // Kode Function Dalam Function:
 
 function outer() {
-    return function inner() {
-        console.log('Inner')
-    }
-    // inner()
+  return function inner() {
+    console.log("Inner");
+  };
+  // inner()
 }
-outer()()
+outer()();
 // outer()
 // ================================================================================

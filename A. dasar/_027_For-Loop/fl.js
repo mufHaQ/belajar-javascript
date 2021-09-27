@@ -1,12 +1,10 @@
-console.info("===For Loop===")
-
+console.info("===For Loop===");
 
 // ================================================================================
 // For Loop:
 // * For adalah salah satu kata kunci yang bisa kita gunakan untuk perulangan
 // * Blok kode yang terdapat pada for akan selalu diulangi selama kondisi for terpenuhi
 // ================================================================================
-
 
 // ================================================================================
 // Sintak Perulangan For:
@@ -21,7 +19,6 @@ console.info("===For Loop===")
 // * Init Statement, Kodisi, dan Post Statement tidak wajib diisi, jika kondisi tidak diisi, berarti kondisi selalu bernilai true
 // ================================================================================
 
-
 // ================================================================================
 // Perulangan Dengan Kondisi:
 
@@ -33,7 +30,6 @@ console.info("===For Loop===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Perulangan Dengan Init Statement:
 
@@ -43,11 +39,10 @@ console.info("===For Loop===")
 // }
 // ================================================================================
 
-
 // ================================================================================
 // Perulangan Dengan Post Statement:
 
-for (let i = 1; i <= 10 ; i++) {
-    console.info(`Perulangan ke-${i}`)
+for (let i = 1; i <= 10; i++) {
+  console.info(`Perulangan ke-${i}`);
 }
 // ================================================================================

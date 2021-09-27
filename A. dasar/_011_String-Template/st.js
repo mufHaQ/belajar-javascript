@@ -1,4 +1,4 @@
-console.log("===String Template===")
+console.log("===String Template===");
 
 // ================================================================================
 // String Template:
@@ -6,29 +6,26 @@ console.log("===String Template===")
 // * Untuk menggunakan String Template, kita menggunakan tanda ` (backtick)
 // ================================================================================
 
-
 // ================================================================================
 // Mengambil Variable:
-const firstName = "Dliyaulhaq"
-const lastName = "Mufliansyah"
-const fullName = `${firstName} ${lastName}`
-console.info(fullName)
+const firstName = "Dliyaulhaq";
+const lastName = "Mufliansyah";
+const fullName = `${firstName} ${lastName}`;
+console.info(fullName);
 // ================================================================================
-
 
 // ================================================================================
 // Expression di String Template
-const nama = "Dliyaulhaq Mufliansyah"
-const value = 80
-const lulus = `Nama: ${nama}, Lulus: ${value > 70}`
-console.log(lulus)
+const nama = "Dliyaulhaq Mufliansyah";
+const value = 80;
+const lulus = `Nama: ${nama}, Lulus: ${value > 70}`;
+console.log(lulus);
 // ================================================================================
-
 
 // ================================================================================
 // Multiline String
 const multilineString = `Halo
 Dunia
-`
-console.log(multilineString)
+`;
+console.log(multilineString);
 // ================================================================================

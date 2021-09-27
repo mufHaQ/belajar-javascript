@@ -1,12 +1,10 @@
-console.log("===Recursive Function===")
-
+console.log("===Recursive Function===");
 
 // ================================================================================
 // Recursive Function:
 // * Recursive Function adalah kemampuan function untuk memanggil dirinya sendiri
 // * Kadang memang ada banyak problem, yang lebih mudah diselesaikan menggunakan Recursive Function, seperti contohnya kasus factorial
 // ================================================================================
-
 
 // ================================================================================
 // Kode Facotrial Loop:
@@ -21,16 +19,15 @@ console.log("===Recursive Function===")
 // console.log(factorial(5))
 // ================================================================================
 
-
 // ================================================================================
 // Kode Factorial Function:
 
 function factorial(value) {
-    if (value === 1) {
-        return 1
-    } else {
-        return value * factorial(value - 1)
-    }
+  if (value === 1) {
+    return 1;
+  } else {
+    return value * factorial(value - 1);
+  }
 }
 // console.log(factorial(5))
 // 5 * factorial(4)
@@ -40,17 +37,16 @@ function factorial(value) {
 // 5 * 4 * 3 * 2 * 1
 // ================================================================================
 
-
 // ================================================================================
 // Contoh Rekursif:
 
 function perluangan(value, max) {
-    if (value <= max) {
-        console.log(value)
-        value++
-        perluangan(value, max)
-    }
+  if (value <= max) {
+    console.log(value);
+    value++;
+    perluangan(value, max);
+  }
 }
 
-perluangan(1, 10)
+perluangan(1, 10);
 // ================================================================================

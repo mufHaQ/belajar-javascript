@@ -1,4 +1,4 @@
-console.info("===Pop Up===")
+console.info("===Pop Up===");
 
 // ================================================================================
 // Alert, Promt dan Confirm:
@@ -7,13 +7,11 @@ console.info("===Pop Up===")
 // * Confirm digunakan untuk meminta input berupa boolean dari pengguna browser berupa pop up
 // ================================================================================
 
-
 // ================================================================================
 // Alert:
 
 // alert("Hello, World!")
 // ================================================================================
-
 
 // ================================================================================
 // Prompt:
@@ -22,16 +20,15 @@ console.info("===Pop Up===")
 // alert(`Halo ${nama}`)
 // ================================================================================
 
-
 // ================================================================================
 // Confirm:
 
-const masuk = confirm("Yakin ingin masuk?") 
+const masuk = confirm("Yakin ingin masuk?");
 
 if (masuk) {
-    const name = prompt("Siapa nama anda?: ")
-    alert(`Halo ${name}`)
+  const name = prompt("Siapa nama anda?: ");
+  alert(`Halo ${name}`);
 } else {
-    alert("Selamat Tinggal!")
+  alert("Selamat Tinggal!");
 }
 // ================================================================================

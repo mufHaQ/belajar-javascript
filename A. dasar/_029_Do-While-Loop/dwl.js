@@ -1,4 +1,4 @@
-console.info("===Do While Loop===")
+console.info("===Do While Loop===");
 
 // ================================================================================
 // Do While Loop:
@@ -7,12 +7,11 @@ console.info("===Do While Loop===")
 // * Oleh karena itu dalam Do While Loop, minimal pasti sekali perulangan dilakukan walaupun kondisi tidak bernilai true
 // ================================================================================
 
-
 // ================================================================================
-let counter = 1
+let counter = 1;
 
 do {
-    console.info(`Perulangan ke-${counter}`)
-    counter++
-} while (counter <= 10)
+  console.info(`Perulangan ke-${counter}`);
+  counter++;
+} while (counter <= 10);
 // ================================================================================

@@ -1,5 +1,4 @@
-console.log("===Masalah Variable var===")
-
+console.log("===Masalah Variable var===");
 
 // ================================================================================
 // Masalah Variable var:
@@ -7,7 +6,6 @@ console.log("===Masalah Variable var===")
 // * Alasannya karena var tidak memiliki block scope, artinya dia tidak mengikat ke local scope
 // * Karena itu kita tidak bisa memprediksi var
 // ================================================================================
-
 
 // ================================================================================
 // Kode Menggunakan let
@@ -23,17 +21,16 @@ console.log("===Masalah Variable var===")
 // console.log(`Global: ${i}`)
 // ================================================================================
 
-
 // ================================================================================
 // Kode Menggunakan var
 
 // Global
-var i = 20
+var i = 20;
 
 for (var i = 0; i < 10; i++) {
-    // Local
-    console.log(`Local: ${i}`)
+  // Local
+  console.log(`Local: ${i}`);
 }
 
-console.log(`Global: ${i}`)
+console.log(`Global: ${i}`);
 // ================================================================================

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Super Constructor===")
-
+console.log("===Super Constructor===");
 
 // ================================================================================
 // Super Constructor:
@@ -11,32 +10,31 @@ console.log("===Super Constructor===")
 // * Kata kunci 'super' digunakan untuk memanggil constructor super class
 // * Jika di child class kita membuat constructor, maka kita wajib memanggil parent constructor, walaupun di parent tidak ada constructor
 
-
 // Kode: Super Constructor
 class Employee {
-    constructor(name) {
-        this.name = name
-    }
+  constructor(name) {
+    this.name = name;
+  }
 
-    sayHello(name) {
-        console.log(`Hi ${name}, my name is Employee ${this.name}`)
-    }
+  sayHello(name) {
+    console.log(`Hi ${name}, my name is Employee ${this.name}`);
+  }
 }
 
 class Manager extends Employee {
-    constructor(name, age) {
-        super(name) // Akan mengirim 'name' pada class ini ke parent calss | Wajib jika kita ingin membuat constructor di child class walaupun tidak ada constructor di super class (parent class)
-        this.age = age
-    }
+  constructor(name, age) {
+    super(name); // Akan mengirim 'name' pada class ini ke parent calss | Wajib jika kita ingin membuat constructor di child class walaupun tidak ada constructor di super class (parent class)
+    this.age = age;
+  }
 
-    sayHello(name) {
-        console.log(`Hi ${name}, my name is Manager ${this.name}`)
-    }
+  sayHello(name) {
+    console.log(`Hi ${name}, my name is Manager ${this.name}`);
+  }
 }
 
-const budi = new Employee("Budi")
-budi.sayHello("Ulhaq")
+const budi = new Employee("Budi");
+budi.sayHello("Ulhaq");
 
-const joko = new Manager("Joko", 29)
-joko.sayHello("Budi")
+const joko = new Manager("Joko", 29);
+joko.sayHello("Budi");
 // ================================================================================

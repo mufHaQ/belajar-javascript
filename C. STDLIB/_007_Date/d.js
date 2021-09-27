@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Date===")
-
+console.log("===Date===");
 
 // ================================================================================
 // Date:
@@ -9,7 +8,6 @@ console.log("===Date===")
 // * Date merupakan representasi milisecond sejak tanggal 1 Januari 1970, atau dikenal dengan Epoch & Unix Timestamp
 // * https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/date
 // ================================================================================
-
 
 // ================================================================================
 // Membuat Object Date:
@@ -21,18 +19,16 @@ console.log("===Date===")
 // | new Date(timestamp)                                            | Membuat date dari Epoch/Unix Timestamp    |
 // |----------------------------------------------------------------|-------------------------------------------|
 
-
 // Kode: Membuat Object Date
 {
-    console.log("Membuat Object Date:")
-    const date1 = new Date().toLocaleString("id-id")
-    console.log(date1.split("/").join("-"))
+  console.log("Membuat Object Date:");
+  const date1 = new Date().toLocaleString("id-id");
+  console.log(date1.split("/").join("-"));
 
-    const date2 = new Date(2021, 08, 18).toLocaleString("id-id")
-    console.log(date2)
+  const date2 = new Date(2021, 08, 18).toLocaleString("id-id");
+  console.log(date2);
 }
 // ================================================================================
-
 
 // ================================================================================
 // Epoch & Unix Timestamp:
@@ -42,22 +38,20 @@ console.log("===Date===")
 // * Untuk mendapatkan waktu saat ini dalama Epoch & Unix Timestamp, kita bisa menggunakan Date.now()
 // * Untuk mengubah dari object date ke Epoch & Unix Timestamp, kita bisa menggunakan function getTime()
 
-
 // Kode: Epoch & Unix Timestamp
 {
-    console.log("\nEpoch & Unix Timestamp:")
+  console.log("\nEpoch & Unix Timestamp:");
 
-    const UnixTimestamp = Date.now()
-    console.log(UnixTimestamp)
+  const UnixTimestamp = Date.now();
+  console.log(UnixTimestamp);
 
-    const dateUnix = new Date(UnixTimestamp)
-    // Outputnya sama
-    console.log(dateUnix.getTime())
+  const dateUnix = new Date(UnixTimestamp);
+  // Outputnya sama
+  console.log(dateUnix.getTime());
 
-    console.log(dateUnix.toLocaleString("id-id"))
+  console.log(dateUnix.toLocaleString("id-id"));
 }
 // ================================================================================
-
 
 // ================================================================================
 // Parsing Date:
@@ -67,7 +61,6 @@ console.log("===Date===")
 // * Jika Date dengan tanggal dan waktu, gunakan YYYY-MM-DDTHH:mm:ss.sss
 // * Jika Date dengan tanggal, waktu dan timezone, gunakan YYYY-MM-DDTHH:mm:ss.sssZ
 // * Hasil parsing adalah Unix Timestamp, bukan object Date
-
 
 // |--------|---------------------------|
 // | YYYY   | Tahun                     |
@@ -81,42 +74,39 @@ console.log("===Date===")
 // | Z      | Timezone                  |
 // |--------|---------------------------|
 
-
 // Kode: Parsing Date
 {
-    console.log("\nParsing Date:")
-    const toUnixTimestamp = Date.parse("2004-10-14T18:20:00.000")
-    // const toUnixTimestamp = Date.parse(new Date())
-    console.log(toUnixTimestamp)
+  console.log("\nParsing Date:");
+  const toUnixTimestamp = Date.parse("2004-10-14T18:20:00.000");
+  // const toUnixTimestamp = Date.parse(new Date())
+  console.log(toUnixTimestamp);
 
-    const toLocaleString = new Date(toUnixTimestamp)
-    console.log(toLocaleString.toLocaleString("id-id"))
+  const toLocaleString = new Date(toUnixTimestamp);
+  console.log(toLocaleString.toLocaleString("id-id"));
 }
 // ================================================================================
-
 
 // ================================================================================
 // Date Getter & Setter
 // * Date juga memiliki banya sekali method untuk mendapatkan informasi date dan juga mengubah informasi date, atau istilahnya adalah Getter & Setter
 // * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#instance_methods
 
-
 // Kode: Date Getter & Setter
 {
-    console.log("\nDate Getter & Setter:")
-    const date = new Date()
+  console.log("\nDate Getter & Setter:");
+  const date = new Date();
 
-    console.log(date.getDate())
-    console.log(date.getMonth()) // Start from index-0
-    console.log(date.getFullYear())
-    console.log(date.getHours())
-    console.log(date.getMinutes())
-    console.log(date.getSeconds())
-    console.log(date.getTimezoneOffset()) // Current Locale time to UTC
+  console.log(date.getDate());
+  console.log(date.getMonth()); // Start from index-0
+  console.log(date.getFullYear());
+  console.log(date.getHours());
+  console.log(date.getMinutes());
+  console.log(date.getSeconds());
+  console.log(date.getTimezoneOffset()); // Current Locale time to UTC
 
-    date.setFullYear("2004", 10, 14)
-    date.setHours(18, 20, 00, 0000)
+  date.setFullYear("2004", 10, 14);
+  date.setHours(18, 20, 00, 0000);
 
-    console.log(date.toLocaleString("id-id"))
+  console.log(date.toLocaleString("id-id"));
 }
 // ================================================================================

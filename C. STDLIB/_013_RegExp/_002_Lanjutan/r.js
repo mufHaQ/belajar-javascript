@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===RegExp Lanjutan")
-
+console.log("===RegExp Lanjutan");
 
 // ================================================================================
 // Fitur lain Regex:
@@ -15,24 +14,22 @@ console.log("===RegExp Lanjutan")
 //      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers
 // ================================================================================
 
-
 // ================================================================================
 // Kode: RegExp Lanjutan
 {
-    console.log("\nRegExp Lanjutan:")
-    const name = "Dliyaulhaq Mufliansyah\nMufliansyah Dliyaulhaq"
+  console.log("\nRegExp Lanjutan:");
+  const name = "Dliyaulhaq Mufliansyah\nMufliansyah Dliyaulhaq";
 
-    const reg1 = /^Mufliansyah/igm // Mereturn kata yang posisinya berada pada awal kalimat saja, contoh: "Mufliansyah Dliyaulhaq" -> Jika mencari Dliyaulhaq, maka akan mereturn null
-    const reg2 = /\b[m-u]/ig
-    const reg3 = /\bm.+h\b/ig
+  const reg1 = /^Mufliansyah/gim; // Mereturn kata yang posisinya berada pada awal kalimat saja, contoh: "Mufliansyah Dliyaulhaq" -> Jika mencari Dliyaulhaq, maka akan mereturn null
+  const reg2 = /\b[m-u]/gi;
+  const reg3 = /\bm.+h\b/gi;
 
-    let result
-    while((result = reg3.exec(name)) !== null) {
-        console.log(result)
-    }
+  let result;
+  while ((result = reg3.exec(name)) !== null) {
+    console.log(result);
+  }
 }
 // ================================================================================
-
 
 // ================================================================================
 // RegExp String:
@@ -45,17 +42,16 @@ console.log("===RegExp Lanjutan")
 // | split(regex): Array        | Memotong String dengan regex                              |
 // |----------------------------|-----------------------------------------------------------|
 
-
 // Kode: RegExp String
 {
-    console.log("\nRegExp String:")
+  console.log("\nRegExp String:");
 
-    const name = "Dliyaulhaq Mufliansyah"
+  const name = "Dliyaulhaq Mufliansyah";
 
-    console.log(name.match(/\b.+q\b/i))
-    console.log(name.search(/\b.+q\b/i))
-    console.log(name.replace(/[aiueo]+/ig, "i"))
-    console.log(name.split(/[aiueo]/).join("-"))
-    // console.log(name.replaceAll(/[aiueo]+/ig, "i")) // Tidak bisa digunakan di nodejs tetapi bisa di browser
+  console.log(name.match(/\b.+q\b/i));
+  console.log(name.search(/\b.+q\b/i));
+  console.log(name.replace(/[aiueo]+/gi, "i"));
+  console.log(name.split(/[aiueo]/).join("-"));
+  // console.log(name.replaceAll(/[aiueo]+/ig, "i")) // Tidak bisa digunakan di nodejs tetapi bisa di browser
 }
 // ================================================================================

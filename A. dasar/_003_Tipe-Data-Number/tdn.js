@@ -1,5 +1,5 @@
 document.writeln("Tipe Data Number");
-document.writeln('</br>');
+document.writeln("</br>");
 
 // ================================================================================
 // Tipe Data Number:
@@ -18,9 +18,9 @@ document.writeln('</br>');
 // * Binary: 0b10101
 // * Octal: 0o10
 
-document.writeln(0xFF);
-document.writeln('</br>');
+document.writeln(0xff);
+document.writeln("</br>");
 document.writeln(0b10101);
-document.writeln('</br>');
+document.writeln("</br>");
 document.writeln(0o10);
 // ================================================================================

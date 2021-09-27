@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Base64===")
-
+console.log("===Base64===");
 
 // ================================================================================
 // Base64:
@@ -11,7 +10,6 @@ console.log("===Base64===")
 // * karena encoding Base64 merupakan text, oleh karena itu sangat aman digunakan pada query param URL atau text body dalam form
 // * https://developer.mozilla.org/en-US/docs/Glossary/Base64
 
-
 // Base64 Function:
 // |----Function----|----------Keterangan---------|
 // | btoa(value)    | Encode ke base64 dari value |
@@ -19,20 +17,19 @@ console.log("===Base64===")
 // |----------------|-----------------------------|
 // Catatan: Function ini akan error jika dijalankan di node.js tetapi tidak jika di browser
 
-
 // Kode: Base64
 {
-    console.log("\nBase64:")
-    const ori = "Dliayulhaq Mufliansyah"
-    const encoded = btoa(ori)
-    const decoded = atob(encoded)
+  console.log("\nBase64:");
+  const ori = "Dliayulhaq Mufliansyah";
+  const encoded = btoa(ori);
+  const decoded = atob(encoded);
 
-    const obj = {
-        ori: ori,
-        encoded: encoded,
-        decoded: decoded
-    }
+  const obj = {
+    ori: ori,
+    encoded: encoded,
+    decoded: decoded,
+  };
 
-    console.table(obj)
+  console.table(obj);
 }
 // ================================================================================

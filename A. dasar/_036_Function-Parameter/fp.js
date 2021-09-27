@@ -1,5 +1,4 @@
-console.log("===Function Parameter===")
-
+console.log("===Function Parameter===");
 
 // ================================================================================
 // Function Parameter:
@@ -9,13 +8,12 @@ console.log("===Function Parameter===")
 // * Parameter bisa lebih dari satu, dan dipisahkan menggunakan tanda koma, some_func(param1, param2, param3)
 // ================================================================================
 
-
 // ================================================================================
 // Kode Function Parameter
 
 function sayHello(firstName, lastName) {
-    console.log(`Hello ${firstName} ${lastName}`)
+  console.log(`Hello ${firstName} ${lastName}`);
 }
 
-sayHello("Dliyaulhaq", "Mufliansyah")
+sayHello("Dliyaulhaq", "Mufliansyah");
 // ================================================================================

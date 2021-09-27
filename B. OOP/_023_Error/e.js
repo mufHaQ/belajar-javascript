@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-console.log("===Error===")
-
+console.log("===Error===");
 
 // ================================================================================
 // Error:
@@ -12,7 +11,6 @@ console.log("===Error===")
 // * https://developer.mozilla.org/en-US/Web/JavaScript/Reference/Global_Objects/Error#error_types
 // ================================================================================
 
-
 // ================================================================================
 // Throw Error:
 // * Saat kita membuat instance object dari class Error, tidak lantas otomatis terjadi error
@@ -20,17 +18,16 @@ console.log("===Error===")
 // * Untuk melempar error, kita bisa menggunakan kata kunci 'throw', diikuti dengan instance object errornya
 // * Jika terjadi error, maka secara otomatis kode program kita akan terhenti, dan kita bisa melihat detail errornya di console browser
 
-
 // Kode: Throw Error
 class MathUtil {
-    static sum(...numbers) {
-        if (numbers.length === 0) {
-            throw new Error("Total parameter harus lebih dari 0")
-        }
-        return numbers.reduce((prev, curr) => prev + curr)
+  static sum(...numbers) {
+    if (numbers.length === 0) {
+      throw new Error("Total parameter harus lebih dari 0");
     }
+    return numbers.reduce((prev, curr) => prev + curr);
+  }
 }
 
-console.log(MathUtil.sum(1, 2, 3, 4, 5))
-console.log(MathUtil.sum())
+console.log(MathUtil.sum(1, 2, 3, 4, 5));
+console.log(MathUtil.sum());
 // ================================================================================

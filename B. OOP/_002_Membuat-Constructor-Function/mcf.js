@@ -2,30 +2,26 @@
 
 // Membuat Constructor Function
 
-console.log("===Membuat Constructor Function===")
-
+console.log("===Membuat Constructor Function===");
 
 // ================================================================================
 // Membuat Object:
 // * Sebenarnya kita sudah belajar tipe data object, dengan cara membuat variable dengan tipe data object
 // * Namun pembuatan object menggunakan tipe data object, akan membuat object yang selalu unik, sendangkan dalam OOP, biasanya kita akan membuat Class sebagai cetakan, sehingga bisa membuat object dengan karakteristik yang sama berkali-kali tanpa harus mendeklarasikan object berkali-kali seperti menggunakan tipe data Object
 
-
 // Kode: Membuat Object dengan Object
 {
-    const ulhaq = {
-        first_name: "Dliyaulhaq",
-        last_name: "Mufliansyah"
-    }
+  const ulhaq = {
+    first_name: "Dliyaulhaq",
+    last_name: "Mufliansyah",
+  };
 
-    const budi = {
-        first_name: "Budi",
-        last_name: "Nugraha"
-    }
-
+  const budi = {
+    first_name: "Budi",
+    last_name: "Nugraha",
+  };
 }
 // ================================================================================
-
 
 // ================================================================================
 // Membuat Object dengan Constructor Function:
@@ -34,13 +30,12 @@ console.log("===Membuat Constructor Function===")
 // * Function ini kita sebut dengan Constructor Function
 // * Setelah kita membuat class, jika kita ingin membuat object dari calss tersebut, kita bisa menggunakan kata kunci new, diikuti dengan nama constructor functionnya
 
-
 // Kode: Membuat Object dengan Constructor Function
 {
-    function Person() { // Sebaiknya menggunakan Uppercase di awal nama, sebagai penanda jika ini adalah Object
+  function Person() {
+    // Sebaiknya menggunakan Uppercase di awal nama, sebagai penanda jika ini adalah Object
+  }
 
-    }
-
-    let ulhaq = new Person()
+  let ulhaq = new Person();
 }
 // ================================================================================
